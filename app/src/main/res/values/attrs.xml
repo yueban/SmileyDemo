@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="boolean" name="isAnimationEnable"/>
+    <attr format="boolean" name="isShowEmojicon"/>
+    <attr format="dimension" name="emojiconSize"/>
+
+    <declare-styleable name="MyEditTextEx">
+        <attr name="isAnimationEnable"/>
+        <attr name="isShowEmojicon"/>
+        <attr name="emojiconSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyTextViewEx">
+        <attr name="isAnimationEnable"/>
+        <attr name="isShowEmojicon"/>
+        <attr name="emojiconSize"/>
+    </declare-styleable>
+</resources>
