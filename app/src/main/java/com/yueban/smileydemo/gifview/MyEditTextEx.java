@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.text.Editable;
 import android.text.Spannable;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.EditText;
 import com.yueban.smileydemo.R;
 
@@ -20,7 +21,7 @@ public class MyEditTextEx extends EditText {
 
     public MyEditTextEx(Context context, AttributeSet attr) {
         super(context, attr);
-
+        setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         TypedArray a = getContext().obtainStyledAttributes(attr, R.styleable.MyEditTextEx);
         mEmojiconSize = a.getDimensionPixelSize(R.styleable.MyEditTextEx_emojiconSize, getLineHeight());
         isAnimationEnable = a.getBoolean(R.styleable.MyEditTextEx_isAnimationEnable, false);

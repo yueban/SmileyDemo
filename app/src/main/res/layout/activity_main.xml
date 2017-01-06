@@ -13,12 +13,14 @@
     tools:context="com.yueban.smileydemo.MainActivity">
 
     <com.yueban.smileydemo.gifview.MyEditTextEx
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:background="#f2f2f5"
         android:gravity="top"
+        app:isAnimationEnable="true"
         android:lines="3"
         android:textColor="#333333"
         android:textSize="16sp"/>
